@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import "../Styles/Homepage.css";
 
@@ -20,22 +21,22 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='bg-malek-yellow h-screen'>
-        <div className='flex flex-col max-w-80 m-auto pt-48'>
-          <h1 className='font-bungee-shade text-malek-green text-9xl ml-1'>
+      <div className='bg-malek-yellow h-screen flex flex-col md:flex-row items-center'>
+        <div className='flex flex-col justify-center items-center md:items-start md:max-w-80 mx-auto md:w-1/2 h-1/2 my-auto'>
+          <h1 className='font-bungee-shade text-malek-green md:text-9xl text-6xl md:ml-1'>
             <span ref={name} />
           </h1>
-          <p className='text-5xl font-bungee-normal text-malek-dark mb-10 mt-5 ml-2'>
+          <p className='md:text-5xl text-3xl text-center md:text-start font-bungee-normal text-malek-dark mb-10 mt-5 md:ml-2'>
             Full Stack <br />
-            <span className='text-4xl'>Developer</span>
+            <span className='md:text-4xl text-2xl'>Developer</span>
           </p>
-          <div className='flex items-center'>
-            <a href='' target='_blank'>
-              <p className='text-9xl text-malek-white font-bungee-normal'>
+          <div className='flex md:flex-row flex-col justify-center md:justify-start items-center mt-10'>
+            <p className='md:text-9xl text-5xl mb-5 md:mb-0 text-malek-white font-bungee-normal overflow-y-clip'>
+              <a href='' target='_blank'>
                 Blog
-              </p>
-            </a>
-            <div className='typewriter ml-12'>
+              </a>
+            </p>
+            <div className='typewriter md:ml-12'>
               <div className='slide'>
                 <i></i>
               </div>
@@ -43,6 +44,42 @@ const Homepage = () => {
               <div className='keyboard'></div>
             </div>
           </div>
+        </div>
+        <div className='md:w-1/2 h-1/2 flex md:items-center justify-center my-auto'>
+          <ul className='flex flex-col items-center md:items-start'>
+            <li className='mb-10'>
+              <Link
+                to='/about'
+                className='text-malek-dark font-bungee-normal md:text-5xl text-3xl homepage-link'
+              >
+                About
+              </Link>
+            </li>
+            <li className='mb-10'>
+              <Link
+                to='/skills'
+                className='text-malek-dark font-bungee-normal md:text-5xl text-3xl homepage-link'
+              >
+                Skills
+              </Link>
+            </li>
+            <li className='mb-10'>
+              <Link
+                to='/portfolio'
+                className='text-malek-dark font-bungee-normal md:text-5xl text-3xl homepage-link'
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/contact'
+                className='text-malek-dark font-bungee-normal md:text-5xl text-3xl homepage-link'
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </>
