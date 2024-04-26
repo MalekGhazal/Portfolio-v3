@@ -11,6 +11,7 @@ export default {
     fontFamily: {
       "bungee-shade": ["Bungee Shade", "sans-serif"],
       "bungee-normal": ["Bungee", "sans-serif"],
+      "source-code": ["Source Code Pro", "monospace"],
     },
     extend: {},
   },
