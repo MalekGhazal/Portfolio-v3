@@ -7,10 +7,10 @@ import { FaEnvelope } from 'react-icons/fa6';
 const About = () => {
   return (
     <>
-      <div className="bg-malek-green h-screen flex flex-col justify-center items-center">
-        <div className="flex items-center justify-center">
+      <div className="bg-malek-green h-screen flex flex-col justify-center items-center gap-2">
+        <div className="flex items-center flex-col lg:flex-row justify-center h-3/5">
           <img className="max-w-md h-auto w-2/5" src={logo} alt="logo" />
-          <p className="font-source-code w-3/5 text-malek-white text-center md:text-start md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed">
+          <p className="font-source-code w-4/5 lg:w-3/5 text-malek-white text-center md:text-start md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed">
             Hey there! I&apos;m a software developer who&apos;s all about the
             thrill of coding and the art of design. Creating something from
             scratch gets my heart racing, whether it&apos;s a slick new
@@ -25,13 +25,14 @@ const About = () => {
 
         {/* Social Media Links */}
 
-        <div className="flex items-center justify-around w-3/4">
+        <div className="flex items-center flex-col xl:flex-row justify-center lg:justify-around gap-3 w-3/4 h-2/5">
           <ul className="example-2">
             <li className="icon-content">
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/malekghazal/"
                 aria-label="LinkedIn"
                 data-social="linkedin"
+                target="_blank"
               >
                 <div className="filled"></div>
                 <svg
@@ -53,9 +54,10 @@ const About = () => {
             </li>
             <li className="icon-content">
               <a
-                href="https://www.github.com/"
+                href="https://github.com/MalekGhazal"
                 aria-label="GitHub"
                 data-social="github"
+                target="_blank"
               >
                 <div className="filled"></div>
                 <svg
@@ -77,9 +79,10 @@ const About = () => {
             </li>
             <li className="icon-content">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/malekkazal/"
                 aria-label="Instagram"
                 data-social="instagram"
+                target="_blank"
               >
                 <div className="filled"></div>
                 <svg
@@ -99,42 +102,18 @@ const About = () => {
               </a>
               <div className="tooltip">Instagram</div>
             </li>
-            <li className="icon-content">
-              <a
-                href="https://youtube.com/"
-                aria-label="Youtube"
-                data-social="youtube"
-              >
-                <div className="filled"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-youtube"
-                  viewBox="0 0 16 16"
-                  xmlSpace="preserve"
-                >
-                  <path
-                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </a>
-              <div className="tooltip">Youtube</div>
-            </li>
           </ul>
 
           <div className="flex items-center justify-center gap-4">
-            <FaLocationDot className="text-malek-yellow text-5xl" />
-            <p className="text-malek-white font-bungee-hairline text-stroke text-3xl">
+            <FaLocationDot className="text-malek-yellow md:text-3xl lg:text-5xl" />
+            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl lg:text-3xl">
               Montreal, QC
             </p>
           </div>
 
           <div className="flex items-center justify-center gap-4">
-            <FaEnvelope className="text-malek-yellow text-5xl" />
-            <p className="text-malek-white font-bungee-hairline text-stroke text-3xl">
+            <FaEnvelope className="text-malek-yellow md:text-3xl lg:text-5xl" />
+            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl lg:text-3xl">
               Ghazal.malek@gmail.com
             </p>
           </div>
