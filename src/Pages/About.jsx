@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import '../Styles/About.css';
 import logo from '../assets/M.png';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaEnvelope } from 'react-icons/fa6';
+import HomeButton from '../Components/HomeButton';
 
 const About = () => {
   return (
@@ -117,13 +117,7 @@ const About = () => {
               Ghazal.malek@gmail.com
             </p>
           </div>
-
-          <Link to="/" className="about-btn" data-text="Awesome">
-            <span className="actual-text">&nbsp;Home&nbsp;</span>
-            <span aria-hidden="true" className="hover-text">
-              &nbsp;Home&nbsp;
-            </span>
-          </Link>
+          <HomeButton />
         </div>
 
         {/* End of social media links section */}
