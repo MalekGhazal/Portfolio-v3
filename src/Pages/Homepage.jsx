@@ -32,9 +32,7 @@ const Homepage = () => {
           </p>
           <div className="flex lg:flex-row flex-col justify-center lg:justify-start items-center mt-10">
             <p className="lg:text-9xl text-5xl mb-5 lg:mb-0 text-malek-white font-bungee-normal overflow-y-clip">
-              <a href="" target="_blank">
-                Blog
-              </a>
+              <Link to={'/blog'}>Blog</Link>
             </p>
             <div className="typewriter lg:ml-12">
               <div className="slide">

@@ -2,66 +2,76 @@
   "projects": [
     {
       "id": 1,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, CSS, MERN",
-      "Link": "https://malekghazal.com/"
+      "title": "JAMQ",
+      "Description": "Make up artist portfolio",
+      "tags": "React, Tailwind",
+      "Link": "https://jehanassi.fr/",
+      "imagePath": ""
     },
     {
       "id": 2,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "HTML, CSS",
-      "Link": "https://malekghazal.com/"
+      "title": "Kinoklik",
+      "Description": "Full stack platform for filmmakers",
+      "tags": "React, NodeJS, Express, MongoDB",
+      "Link": "https://www.kinoklik.ca/",
+      "imagePath": ""
     },
     {
       "id": 3,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, Tailwind",
-      "Link": "https://malekghazal.com/"
+      "title": "LMS",
+      "Description": "Library Management System",
+      "tags": "C#, WinForms, SQL",
+      "Link": "https://github.com/MalekGhazal/LMS-Project",
+      "imagePath": ""
     },
     {
       "id": 4,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, CSS",
-      "Link": "https://malekghazal.com/"
+      "title": "Web Application",
+      "Description": "Movie Reviews Website",
+      "tags": "Java, React, Spring-boot",
+      "Link": "https://github.com/MalekGhazal",
+      "imagePath": ""
     },
     {
       "id": 5,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, CSS",
-      "Link": "https://malekghazal.com/"
+      "title": "E-commerce",
+      "Description": "MERN E-comm Website",
+      "tags": "NodeJs, React, Express, MongoDB, Stripe",
+      "Link": "https://github.com/MalekGhazal/transactional-web-project-MalekGhazal",
+      "imagePath": ""
     },
     {
       "id": 6,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, NestJS",
-      "Link": "https://malekghazal.com/"
+      "title": "Gopinion",
+      "Description": "Full Stack Admin Panel",
+      "tags": "PHP, Laravel",
+      "Link": "https://gopinion.ca/admin/",
+      "imagePath": ""
     },
     {
       "id": 7,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, CSS",
-      "Link": "https://malekghazal.com/"
+      "title": "Portfolio-v1",
+      "Description": "My First Portfolio Ever",
+      "tags": "HTML, CSS, JS",
+      "Link": "https://github.com/MalekGhazal/first-Portfolio",
+      "imagePath": ""
     },
     {
       "id": 8,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "Java, Spring",
-      "Link": "https://malekghazal.com/"
+      "title": "Portfolio-v2",
+      "Description": "My Second Portfolio",
+      "tags": "HTML, CSS, SCSS, Bootstrap",
+      "Link": "https://github.com/MalekGhazal/second-Portfolio",
+      "imagePath": ""
     },
+
     {
       "id": 9,
-      "title": "Test Title",
-      "Description": "Project Description Lorem Ipsum...",
-      "tags": "React, CSS",
-      "Link": "https://malekghazal.com/"
+      "title": "Coming Soon...",
+      "Description": "Coming Soon ...",
+      "tags": "PHP, Laravel, React",
+      "Link": "https://github.com/MalekGhazal",
+      "imagePath": ""
     }
   ]
 }
