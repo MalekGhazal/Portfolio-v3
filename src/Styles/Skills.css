@@ -1,0 +1,14 @@
+.icon-hover {
+  transition: color 0.3s ease-in-out;
+}
+
+.icon-hover:hover {
+  color: #f5f7f8;
+}
+
+#my-tooltip {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f5f7f8;
+  background-color: #495e57;
+}

@@ -11,7 +11,10 @@
 /* button styling */
 .about-btn {
   --border-right: 6px;
-  --text-stroke-color: var(--text-stroke-color(255, 255, 255, 0.6));
+  --text-stroke-color: var(
+    --default-text-stroke-color,
+    rgba(245, 247, 248, 0.6)
+  );
   --animation-color: var(--default-animation-color, #f4ce14);
   --fs-size: 2em;
   letter-spacing: 3px;

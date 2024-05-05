@@ -29,7 +29,7 @@ const Contact = () => {
     '#495E57'
   );
   document.documentElement.style.setProperty(
-    '--text-stroke-color',
+    '--default-text-stroke-color',
     'rgb(69, 71, 75, 0.6)'
   );
 

@@ -5,6 +5,15 @@ import { FaEnvelope } from 'react-icons/fa6';
 import HomeButton from '../Components/HomeButton';
 
 const About = () => {
+  document.documentElement.style.setProperty(
+    '--default-animation-color',
+    '#F4CE14'
+  );
+  document.documentElement.style.setProperty(
+    '--default-text-stroke-color',
+    'rgb(245, 247, 248, 0.6)'
+  );
+
   return (
     <>
       <div className="bg-malek-green h-screen flex flex-col justify-center items-center gap-2">
