@@ -43,7 +43,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 h-1/2 flex lg:items-center justify-center my-auto">
+        <div className="lg:w-1/2 h-1/2 flex items-center justify-center my-auto">
           <ul className="flex flex-col items-center lg:items-start">
             <li className="lg:mb-10 mb-5">
               <Link

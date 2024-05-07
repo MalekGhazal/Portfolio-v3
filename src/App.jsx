@@ -11,6 +11,8 @@ import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 import NotFound from './Pages/NotFound';
 import Blog from './Pages/Blog';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const router = createBrowserRouter(
@@ -27,7 +29,12 @@ function App() {
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <ToastContainer />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

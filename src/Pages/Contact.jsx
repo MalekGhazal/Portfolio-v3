@@ -2,6 +2,8 @@
 import '../Styles/Contact.css';
 import HomeButton from '../Components/HomeButton.jsx';
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -16,9 +18,13 @@ const Contact = () => {
       )
       .then((result) => {
         console.log('Email sent successfully:', result.text);
+        toast.success('Message Has Been Sent Successfully!');
       })
       .catch((error) => {
         console.error('Error sending email:', error);
+        toast.warning(
+          'Error sending your message, please try again or send me an email.'
+        );
       });
 
     e.target.reset();
