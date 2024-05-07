@@ -5,7 +5,7 @@ const ProjectCard = () => {
   return (
     <>
       {Project.projects.map((project) => (
-        <div key={project.id} className="card">
+        <div key={project.id} className="card mx-2">
           <div className="main-content">
             <div className="header">
               <span>Project:</span>

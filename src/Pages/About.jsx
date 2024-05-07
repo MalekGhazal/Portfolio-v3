@@ -16,10 +16,10 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-malek-green h-screen flex flex-col justify-center items-center gap-2">
-        <div className="flex items-center flex-col lg:flex-row justify-center h-3/5">
+      <div className="bg-malek-green h-screen flex flex-col justify-center items-center gap-6 lg:gap-2">
+        <div className="flex items-center flex-col lg:flex-row justify-center lg:h-3/5">
           <img className="max-w-md h-auto w-2/5" src={logo} alt="logo" />
-          <p className="font-source-code w-4/5 lg:w-3/5 text-malek-white text-center md:text-start md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed">
+          <p className="font-source-code w-4/5 lg:w-3/5 text-malek-white text-center md:text-start text-sm md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed">
             Hey there! I&apos;m a software developer who&apos;s all about the
             thrill of coding and the art of design. Creating something from
             scratch gets my heart racing, whether it&apos;s a slick new
@@ -34,7 +34,7 @@ const About = () => {
 
         {/* Social Media Links */}
 
-        <div className="flex items-center flex-col xl:flex-row justify-center lg:justify-around gap-3 w-3/4 h-2/5">
+        <div className="flex items-center flex-col xl:flex-row justify-center lg:justify-around gap-3 w-3/4 lg:h-2/5">
           <ul className="example-2">
             <li className="icon-content">
               <a
@@ -115,14 +115,14 @@ const About = () => {
 
           <div className="flex items-center justify-center gap-4">
             <FaLocationDot className="text-malek-yellow md:text-3xl lg:text-5xl" />
-            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl lg:text-3xl">
+            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl 2xl:text-3xl">
               Montreal, QC
             </p>
           </div>
 
           <div className="flex items-center justify-center gap-4">
             <FaEnvelope className="text-malek-yellow md:text-3xl lg:text-5xl" />
-            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl lg:text-3xl">
+            <p className="text-malek-white font-bungee-hairline text-stroke md:text-xl 2xl:text-3xl">
               Ghazal.malek@gmail.com
             </p>
           </div>

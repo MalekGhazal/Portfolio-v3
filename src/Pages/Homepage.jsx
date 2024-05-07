@@ -22,7 +22,7 @@ const Homepage = () => {
   return (
     <>
       <div className="bg-malek-yellow h-screen flex flex-col lg:flex-row items-center">
-        <div className="flex flex-col justify-center items-center lg:items-start lg:max-w-80 mx-auto lg:w-1/2 h-1/2 my-auto">
+        <div className="flex flex-col justify-center items-center lg:items-start lg:max-w-80 mx-auto lg:w-1/2 h-1/2 mt-10 lg:my-auto">
           <h1 className="font-bungee-shade text-malek-green lg:text-9xl text-6xl lg:ml-1">
             <span ref={name} />
           </h1>
@@ -45,7 +45,7 @@ const Homepage = () => {
         </div>
         <div className="lg:w-1/2 h-1/2 flex lg:items-center justify-center my-auto">
           <ul className="flex flex-col items-center lg:items-start">
-            <li className="mb-10">
+            <li className="lg:mb-10 mb-5">
               <Link
                 to="/about"
                 className="text-malek-dark font-bungee-normal xl:text-5xl text-3xl homepage-link"
@@ -53,7 +53,7 @@ const Homepage = () => {
                 About
               </Link>
             </li>
-            <li className="mb-10">
+            <li className="lg:mb-10 mb-5">
               <Link
                 to="/skills"
                 className="text-malek-dark font-bungee-normal xl:text-5xl text-3xl homepage-link"
@@ -61,7 +61,7 @@ const Homepage = () => {
                 Skills
               </Link>
             </li>
-            <li className="mb-10">
+            <li className="lg:mb-10 mb-5">
               <Link
                 to="/portfolio"
                 className="text-malek-dark font-bungee-normal xl:text-5xl text-3xl homepage-link"
