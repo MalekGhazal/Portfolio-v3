@@ -12,26 +12,26 @@ const About = () => {
       duration: 1,
       opacity: 0,
       x: -50,
-      ease: 'power4.out',
+      ease: 'power4.in',
     });
     gsap.to('.about-img', {
       duration: 1,
       opacity: 1,
       x: 0,
-      ease: 'power4.in',
+      ease: 'power4.out',
     });
 
     gsap.from('.about-text', {
       duration: 1,
       opacity: 0,
       y: 50,
-      ease: 'power4.out',
+      ease: 'power4.in',
     });
     gsap.to('.about-text', {
       duration: 1,
       opacity: 1,
       y: 0,
-      ease: 'power4.in',
+      ease: 'power4.out',
     });
   }, []);
 
