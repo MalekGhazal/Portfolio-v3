@@ -1,10 +1,40 @@
+import { useEffect } from 'react';
 import '../Styles/About.css';
 import logo from '../assets/M.png';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaEnvelope } from 'react-icons/fa6';
 import HomeButton from '../Components/HomeButton';
+import { gsap } from 'gsap';
 
 const About = () => {
+  useEffect(() => {
+    gsap.from('.about-img', {
+      duration: 1,
+      opacity: 0,
+      x: -50,
+      ease: 'power4.out',
+    });
+    gsap.to('.about-img', {
+      duration: 1,
+      opacity: 1,
+      x: 0,
+      ease: 'power4.in',
+    });
+
+    gsap.from('.about-text', {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: 'power4.out',
+    });
+    gsap.to('.about-text', {
+      duration: 1,
+      opacity: 1,
+      y: 0,
+      ease: 'power4.in',
+    });
+  }, []);
+
   document.documentElement.style.setProperty(
     '--default-animation-color',
     '#F4CE14'
@@ -18,8 +48,13 @@ const About = () => {
     <>
       <div className="bg-malek-green h-screen flex flex-col justify-center items-center gap-6 lg:gap-2">
         <div className="flex items-center flex-col lg:flex-row justify-center lg:h-3/5">
-          <img className="max-w-md h-auto w-2/5" src={logo} alt="logo" />
-          <p className="font-source-code w-4/5 lg:w-3/5 text-malek-white text-center md:text-start text-sm md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed">
+          <img
+            className="max-w-md h-auto w-2/5 about-img"
+            src={logo}
+            alt="logo"
+            loading="lazy"
+          />
+          <p className="font-source-code w-4/5 lg:w-3/5 text-malek-white text-center md:text-start text-sm md:text-lg lg:text-xl xl:text-2xl xl:leading-relaxed about-text">
             Hey there! I&apos;m a software developer who&apos;s all about the
             thrill of coding and the art of design. Creating something from
             scratch gets my heart racing, whether it&apos;s a slick new
