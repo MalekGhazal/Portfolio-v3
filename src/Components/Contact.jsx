@@ -1,9 +1,9 @@
 // Contact.jsx
 import '../Styles/Contact.css';
-import HomeButton from '../Components/HomeButton.jsx';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialMedia from '../Components/SocialMedia';
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -30,25 +30,21 @@ const Contact = () => {
     e.target.reset();
   };
 
-  document.documentElement.style.setProperty(
-    '--default-animation-color',
-    '#495E57'
-  );
-  document.documentElement.style.setProperty(
-    '--default-text-stroke-color',
-    'rgb(69, 71, 75, 0.6)'
-  );
-
   return (
     <>
-      <div className="h-screen bg-malek-yellow flex flex-col items-center justify-center gap-10 lg:gap-20">
-        <h1 className="font-bungee-shade text-malek-dark md:text-9xl text-center text-6xl md:ml-1">
+      <div
+        id="contact-page"
+        className="bg-malek-yellow min-h-screen lg:h-screen flex flex-col items-center justify-center gap-10 lg:gap-20 "
+      >
+        <h1 className="font-bungee-shade text-malek-dark md:text-9xl text-center text-6xl z-50">
           Reach out!
         </h1>
 
-        <div className="form-container w-11/12 md:w-auto">
+        <div className="form-container w-11/12 md:w-auto z-50">
           <form id="contactForm" className="form" onSubmit={sendEmail}>
             <div className="form-group">
+              <label htmlFor="name">Your Full Name</label>
+              <input required="" name="name" id="name" type="text" />
               <label htmlFor="email">Your Email</label>
               <input required="" name="email" id="email" type="email" />
             </div>
@@ -67,7 +63,8 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <HomeButton />
+
+        <SocialMedia />
       </div>
     </>
   );
