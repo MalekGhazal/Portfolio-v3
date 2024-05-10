@@ -1,3 +1,4 @@
+import GoHomeButton from '../Components/GoHomeButton';
 import '../Styles/Blog.css';
 
 const Blog = () => {
@@ -18,6 +19,7 @@ const Blog = () => {
         <h1 className="font-bungee-shade text-malek-dark lg:text-6xl md:text-4xl text-center text-3xl md:ml-1">
           Coming Soon...
         </h1>
+        <GoHomeButton />
       </div>
     </>
   );

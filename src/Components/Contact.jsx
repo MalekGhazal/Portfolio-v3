@@ -40,7 +40,7 @@ const Contact = () => {
           Reach out!
         </h1>
 
-        <div className="form-container w-11/12 md:w-auto z-50">
+        <div className="form-container w-11/12 mb-4 lg:mb-0 md:w-auto z-50">
           <form id="contactForm" className="form" onSubmit={sendEmail}>
             <div className="form-group">
               <label htmlFor="name">Your Full Name</label>
