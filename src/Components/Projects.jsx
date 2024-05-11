@@ -1,4 +1,14 @@
 import ProjectCard from './ProjectCard.jsx';
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+};
 
 const Projects = () => {
   return (
@@ -7,11 +17,20 @@ const Projects = () => {
         id="portfolio-page"
         className="bg-gradient-to-b from-malek-yellow to-malek-white to-90% flex flex-col items-center justify-center pb-20"
       >
-        <div className="flex items-center my-20">
+        <motion.div
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1 }}
+          viewport={{
+            once: true,
+          }}
+          className="flex items-center my-20"
+        >
           <h1 className="font-bungee-shade text-malek-dark lg:text-9xl text-5xl md:text-6xl">
             Portfolio
           </h1>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 items-center">
           <ProjectCard />

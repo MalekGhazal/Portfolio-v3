@@ -4,6 +4,16 @@ import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialMedia from '../Components/SocialMedia';
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+};
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -36,9 +46,18 @@ const Contact = () => {
         id="contact-page"
         className="bg-malek-yellow min-h-screen lg:h-screen flex flex-col items-center justify-center gap-10 lg:gap-20 "
       >
-        <h1 className="font-bungee-shade text-malek-dark md:text-9xl text-center text-6xl z-50">
+        <motion.div
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1 }}
+          viewport={{
+            once: true,
+          }}
+          className="font-bungee-shade text-malek-dark md:text-9xl text-center text-6xl z-50"
+        >
           Reach out!
-        </h1>
+        </motion.div>
 
         <div className="form-container w-11/12 mb-4 lg:mb-0 md:w-auto z-50">
           <form id="contactForm" className="form" onSubmit={sendEmail}>
