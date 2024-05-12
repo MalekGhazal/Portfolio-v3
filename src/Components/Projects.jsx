@@ -32,9 +32,10 @@ const Projects = () => {
           </h1>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 items-center">
-          <ProjectCard />
-        </div>
+        <ProjectCard />
+        <h1 className="font-bungee-normal text-malek-dark text-xl mt-4">
+          Swipe for more
+        </h1>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
