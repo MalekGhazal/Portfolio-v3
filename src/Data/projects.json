@@ -6,7 +6,7 @@
       "Description": "Make up artist portfolio",
       "tags": "React, Tailwind",
       "Link": "https://jehanassi.fr/",
-      "imagePath": "/src/assets/images/jamq.png"
+      "imagePath": "/images/jamq.png"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "Description": "Full stack platform for filmmakers",
       "tags": "React, NodeJS, Express, MongoDB",
       "Link": "https://www.kinoklik.ca/",
-      "imagePath": "/src/assets/images/kinoklik.png"
+      "imagePath": "/images/kinoklik.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "Description": "Library Management System",
       "tags": "C#, WinForms, SQL",
       "Link": "https://github.com/MalekGhazal/LMS-Project",
-      "imagePath": "/src/assets/images/lms.png"
+      "imagePath": "/images/lms.png"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "Description": "Movie Reviews Website",
       "tags": "Java, React, Spring-boot",
       "Link": "https://github.com/MalekGhazal",
-      "imagePath": "/src/assets/images/movies.png"
+      "imagePath": "/images/movies.png"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "Description": "MERN E-comm Website",
       "tags": "NodeJs, React, Express, MongoDB, Stripe",
       "Link": "https://github.com/MalekGhazal/transactional-web-project-MalekGhazal",
-      "imagePath": "/src/assets/images/ecomm.png"
+      "imagePath": "/images/ecomm.png"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "Description": "Full Stack Admin Panel",
       "tags": "PHP, Laravel",
       "Link": "https://gopinion.ca/admin/",
-      "imagePath": "/src/assets/images/gopinion.png"
+      "imagePath": "/images/gopinion.png"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "Description": "My First Portfolio Ever",
       "tags": "HTML, CSS, JS",
       "Link": "https://github.com/MalekGhazal/first-Portfolio",
-      "imagePath": "/src/assets/images/portfolio-v1.png"
+      "imagePath": "/images/portfolio-v1.png"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "Description": "My Second Portfolio",
       "tags": "HTML, CSS, SCSS, Bootstrap",
       "Link": "https://github.com/MalekGhazal/second-Portfolio",
-      "imagePath": "/src/assets/images/portfolio-v2.png"
+      "imagePath": "/images/portfolio-v2.png"
     },
 
     {
@@ -71,7 +71,7 @@
       "Description": "Coming Soon ...",
       "tags": "PHP, Laravel, React",
       "Link": "https://github.com/MalekGhazal",
-      "imagePath": "/src/assets/images/laravel.png"
+      "imagePath": "/images/laravel.png"
     }
   ]
 }
